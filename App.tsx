@@ -1,12 +1,13 @@
-import { View, Text } from "react-native"
-import Icon from 'react-native-vector-icons/Ionicons'
+import 'react-native-gesture-handler';
+
+import { NavigationContainer } from "@react-navigation/native";
+import { Navigator } from './src/navigator/Navigator';
 
 const App = () => {
     return (
-      <View>
-        <Text>Hola Mundo</Text>
-        <Icon name="star-outline" size={ 24 } color="blue" />
-      </View>
+      <NavigationContainer>
+        <Navigator />
+      </NavigationContainer>
     )
 }
 
